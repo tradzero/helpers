@@ -1,0 +1,27 @@
+{
+    "name": "tradzero/helpers",
+    "description": "useful helper collection",
+    "type": "library",
+    "require": {
+        "ext-bcmath": "^7.0"
+    },
+    "authors": [
+        {
+            "name": "TradZero",
+            "email": "admin@drakframe.com"
+        },
+        {
+            "name": "ZHANGXIANGLIANG",
+            "email": "326277403@qq.com"
+        },
+        {
+            "name": "hitman",
+            "email": "404@not.found"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
