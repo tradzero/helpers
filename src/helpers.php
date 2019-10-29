@@ -114,3 +114,20 @@ if (! function_exists('is_negative')) {
         return 0 === strncmp('-', $number, 1);
     }
 }
+
+if (!function_exists('random_float')) {
+    function random_float($min, $max, $decimals = 0)
+    {
+        $scale = pow(10, $decimals);
+        return random_int($min * $scale, $max * $scale) / $scale;
+    }
+}
+
+if (!function_exists('mask_email')) {
+    function mask_email($email, $len = 3)
+    {
+        list($name, $domain) = explode('@', $email);
+        $name = substr($name, 0, 3);
+        return $name . str_repeat('*', $len) . '@' . $domain;
+    }
+}
