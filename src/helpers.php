@@ -85,7 +85,7 @@ if (!function_exists('safe_format')) {
             $times = substr($string, $pos + 1);
             return safe_mul($base, safe_pow(10, $times), $scale);
         } else {
-            return $num;
+            return bcadd($num, 0, $scale);
         }
     }
 }
